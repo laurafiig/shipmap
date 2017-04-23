@@ -1,0 +1,24 @@
+{
+  "name": "shipmap",
+  "version": "1.0.0",
+  "description": "google api driven app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurafiig/shipmap.git"
+  },
+  "author": "Laura Fiig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurafiig/shipmap/issues"
+  },
+  "homepage": "https://github.com/laurafiig/shipmap#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0"
+  }
+}
