@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-4">
+          <img id="pic" src="http://www.navsource.org/archives/09/05/09052908.jpg" alt="Mt.Hood">
+          <h2>USS Mount Hood AE-29</h2>
+          <h4>Kilauea Class Ammunition Ship:</h4>
+          <p>Commissioned, USS Mount Hood (AE-29), 1 May 1971</p>
+          <p>Decommissioned, struck from the Naval Register, 10 August 1999</p>
+          <p>Final Disposition, scrapped at Brownsville, TX.</p>
+          <h4>Specifications:</h4> 
+          <p>Displacement 9,340 t.(lt) 19,940 t.(fl)</p> 
+          <p>Length 564'</p> 
+          <p>Beam 81'</p> 
+          <p>Draft 29'</p> 
+          <p>Speed 20 kts.</p>
+          <h4>Complement</h4>
+          <p>MSC 125 -133 Civilian Mariners</p>
+          <p>Naval Detachment 30</p>
+          <p>Cargo Capacity 60,000 cu ft 6,000DWT</p>
+          <h4>Armament</h4>
+          <p>USS - four twin 3"/50 cal dual purpose gun mounts</p>
+          <p>USNS - none</p>
+          <p>Aircraft two MH60S Seahawk helicopters</p>
+        </div>
+        <div class="col-md-8">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="js/shipmap.js"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKTgmslJgWpFoDM3m2EFgCNv043keJJTA&callback=initMap">
+    </script>
+  </body>
+</html>

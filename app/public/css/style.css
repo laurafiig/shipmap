@@ -1,0 +1,14 @@
+
+.container {margin-top: 25px;}
+
+#pic {width: 100%;}
+
+#map{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    frameborder: 0;
+    border:0;
+    padding-bottom: 2em;
+}
