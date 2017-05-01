@@ -30,8 +30,8 @@ function initMap() {
 }
 
 ///////////////////////////////////////////////////
-
-function geocode(latlng){
+/*
+function geocode(){
 loc =  data.location
 //lat/lon info from google
 var queryGeoURL = "https://maps.googleapis.com/maps/api/geocode/json?address="+loc+"&key=AIzaSyCKTgmslJgWpFoDM3m2EFgCNv043keJJTA"
@@ -52,22 +52,38 @@ console.log(latlng);
 
 });
 
-}
+}*/
 
 // When the page loads, grab all of our locations
 $.get("/api/all", function(data) {
-  
   console.log(data)
   
   for (var i = 0; i < data.length; i++) {
 
-    geocode(latlng)
-
-    //locations.push(latlng)
+    //geocode()
     
+    loc =  data[i].location
+    console.log(i + ": " + loc)
+    //lat/lon info from google
+    var queryGeoURL = "https://maps.googleapis.com/maps/api/geocode/json?address="+loc+"&key=AIzaSyCKTgmslJgWpFoDM3m2EFgCNv043keJJTA"
+    console.log("where??" + queryGeoURL)
+    $.ajax({url: queryGeoURL, method: 'GET'})
+    
+    .done(function(geoResponse) {
+    console.log(geoResponse)
+    var lat = geoResponse.results[0].geometry.location.lat;
+    var lng = geoResponse.results[0].geometry.location.lng;
+    var latlng = {lat: lat, lng: lng}
+    console.log("RESULT")
+    console.log(latlng);
+    locations.push(latlng);
+    console.log(locations)
+    });
+    
+
   }
 
- initMap()
+  initMap()
 
 
 
