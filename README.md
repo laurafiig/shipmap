@@ -11,3 +11,6 @@ USS MT HOOD  map of member locations by zip/city
 node, express, mysql
 
 My plan is for this to become the core of an app where you can find and contact shipmates you served with in the past 
+
+For now the database is only a list of cities, the full app will have encryption in place and 
+let users provide as much or as little as they want.
